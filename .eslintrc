@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "react-app"
+  ],
+  // Here you can change rules, key = Rule Name, value = 'off'|'warn'|'error'
+  "rules": {
+    "react-hooks/exhaustive-deps": "off"
+  }
+}

@@ -1,0 +1,34 @@
+.move-list-section {
+    background-color: lightgray;
+    border-radius: 5px;
+
+    h3 {
+        border-bottom: 1px solid gray;
+        padding-bottom: 10px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+
+        li:not(:last-child) {
+            padding-bottom: 10px;
+            border-bottom: 1px solid gray;
+        }
+    }
+
+    .no-moves-msg {
+        padding: 20px;
+        font-weight: bold;
+    }
+    &.small {
+        width: 90%;
+        margin: 0 auto;
+
+        @include for-narrow-layout {
+            width: 435px;
+        }
+    }
+}

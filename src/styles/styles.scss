@@ -1,0 +1,32 @@
+// setup
+@import './setup/variables';
+@import './setup/mixins';
+@import './setup/functions';
+@import './setup/typography';
+
+// basic
+@import './basics/base';
+@import './basics/helpers';
+@import './basics/layout';
+@import './basics/buttons';
+
+//plugins 
+
+// @import '../../node_modules/element-ui/lib/theme-chalk/index.css';
+
+// components
+@import './cmps/Home';
+@import './cmps/ContactPage';
+@import './cmps/ContactDetailsPage';
+@import './cmps/StatisticPage';
+@import './cmps/AppHeader';
+@import './cmps/ContactEditPage';
+@import './cmps/SignupPage';
+@import './cmps/MoveList';
+@import './cmps/TransferFund';
+@import './cmps/Converter';
+
+
+// @import './cmps/header';
+
+//fonts

@@ -1,0 +1,56 @@
+.home-section {
+    margin-bottom: 80px;
+
+    .hero {
+        margin-top: 73px;
+        width: 100%;
+        height: 400px;
+        background-image: url("https://static.vecteezy.com/system/resources/previews/000/541/203/non_2x/vector-realistic-bitcoin-background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        h2 {
+            position: absolute;
+            top: 10px;
+            left: 12px;
+            color: whitesmoke;
+            font-size: 2.5rem;
+            font-style: italic;
+            text-shadow: -4px 3px 2px rgba(150, 150, 150, 0.4);
+
+            @include for-narrow-layout {
+                top: 32px;
+                left: 20px;
+            }
+        }
+    }
+
+    main {
+        margin-top: 25px;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h4 {
+            text-decoration: underline;
+        }
+
+        .detail-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            &:nth-child(3) {
+                margin-bottom: 40px;
+            }
+        }
+
+        img {
+            width: 30px;
+        }
+    }
+
+
+}

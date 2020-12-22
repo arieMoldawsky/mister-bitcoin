@@ -1,0 +1,16 @@
+.main-layout {  
+  @include for-normal-layout {
+    display: grid;
+    align-items: center;
+    grid-template-columns:
+      minmax(1rem, 1fr)
+      minmax(auto, 1100px)
+      minmax(1rem, 1fr);
+    .full-grid {
+      grid-column: 1 / -1;
+    }
+    .center-grid {
+      grid-column: 2 / span 1 !important;
+    }
+  }
+} 

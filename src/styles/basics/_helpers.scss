@@ -1,0 +1,192 @@
+.site-block {
+  margin-bottom: rem(20px);
+}
+
+// Aspect ratios
+
+.ratio-16-9 {
+  @include aspect-ratio(100, 56);
+}
+
+.ratio-square {
+  @include aspect-ratio(100, 100);
+}
+
+.ratio-card {
+  @include aspect-ratio(100, 80);
+}
+
+.ratio-poster {
+  @include aspect-ratio(100, 150);
+}
+
+/* general helpers */
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-as-jc {
+  display: flex;
+  justify-content: center;
+}
+
+.f-as-jsb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.f-ae-jsb {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.f-as-jsa {
+  display: flex;
+  justify-content: space-around;
+}
+.f-as-jse {
+  display: flex;
+  justify-content: space-evenly;
+}
+.f-as-jfe {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.f-as-jfs {
+  display: flex;
+  justify-content: flex-start;
+}
+.f-ac-jc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f-ac-jsb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.f-ac-jsa {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.f-ac-jse {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.a-start {
+  align-items: flex-start;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.a-end {
+  align-items: flex-end;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.j-space-b {
+  justify-content: space-between;
+}
+
+.j-space-e {
+  justify-content: space-evenly;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.button-reset {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: inline;
+  padding: 0;
+}
+
+.icon {
+  font-size: 1.3rem;
+  color: rgb(70, 70, 70);
+  cursor: pointer;
+}
+
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &:hover {
+    cursor: auto;
+  }
+}
+
+.fill-parent {
+  width: 100%;
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+}
+
+/* restarters */
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+}
+
+input {
+  font-family: Roboto;
+  width: 15rem;
+  border: 1px solid rgb(164, 164, 164);
+  padding: 0.2rem;
+}
