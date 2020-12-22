@@ -3,12 +3,20 @@
     top: 0;
     width: 100%;
     z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
     padding: 21px 20px;
     box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
     background: linear-gradient(to right, #0C4E89, #031934);
+    grid-column: 1 / span 3;
+
+    main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        grid-column: 2 / span 1;
+    }
     color: whitesmoke;
 
     div {

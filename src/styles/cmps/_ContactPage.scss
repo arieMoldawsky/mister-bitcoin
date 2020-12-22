@@ -2,6 +2,12 @@
 .contact-page-section {
     padding: 10px 20px 0;
     margin: 100px 0 73px;
+    grid-column: 2 / span 1;
+
+    @include for-narrow-layout {
+        padding: 10px 0;
+    }
+
     
     h1 {
         margin-bottom: 15px;
@@ -19,10 +25,15 @@
 }
 
 .contact-list-section {
+    grid-column: 2 / span 1;
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 15px;
-    padding: 20px;
+    padding: 20px 0;
+    
+    @include for-narrow-layout {
+        padding: 20px;
+    }
 }
 
 .contact-preview-section {

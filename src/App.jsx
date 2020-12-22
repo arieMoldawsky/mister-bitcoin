@@ -15,7 +15,7 @@ function App() {
     return user? <Route {...props} /> : <Redirect to="/signup" />
   }
   return (
-    <div className="App">
+    <div className="App main-layout">
       <Router>
         <AppHeader />
         <Switch>

@@ -1,6 +1,13 @@
 .move-list-section {
     background-color: lightgray;
     border-radius: 5px;
+    width: unset;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.6);
+    
+    @include for-narrow-layout {
+        width: 65%;
+        margin: 0 auto;
+    }
 
     h3 {
         border-bottom: 1px solid gray;

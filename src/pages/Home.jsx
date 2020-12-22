@@ -29,7 +29,7 @@ export default class Home extends Component {
     render() {
         const { user, bitcoinRate } = this.state;
         return (
-            <div className="home-section">
+            <div className="home-section main-layout">
                 <div className="hero">
                     <h2>Hello {user.name}!</h2>
                 </div>

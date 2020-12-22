@@ -31,11 +31,13 @@ export function StatisticPage() {
                 <img src={bitcoinImg} alt="" />
                 <div>Today's Bitcoin Rate: ${bitcoinRate}</div>
             </div>
-            <Sparklines data={data}>
-                <SparklinesLine style={{ fill: "yellow" }} />
-                <SparklinesSpots />
-            </Sparklines>
-            <h3>₿ Bitcoin's Market Price - 2019-2020</h3>
+            <div className="chart-container">
+                <Sparklines data={data}>
+                    <SparklinesLine style={{ fill: "yellow" }} />
+                    <SparklinesSpots />
+                </Sparklines>
+                <h3>₿ Bitcoin's Market Price - 2019-2020</h3>
+            </div>
             <Converter />
         </div>
     )
