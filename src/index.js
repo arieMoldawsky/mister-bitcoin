@@ -5,8 +5,7 @@ import App from './App.jsx';
 import reportWebVitals from './tests/reportWebVitals';
 import { Provider } from 'react-redux';
 import { store } from './store';
-import serviceWorker from './serviceWorker';
-
+import * as serviceWorker from './serviceWorker';
 
 
 ReactDOM.render(
