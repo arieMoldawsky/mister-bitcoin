@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { userService } from '../services/userService';
 import bitcoinImg from '../assets/bitcoin.png';
 
@@ -7,6 +7,10 @@ import bitcoinImg from '../assets/bitcoin.png';
 export function SignupPage(props) {
 
     const [name, setName] = useState('');
+
+    useEffect(() => {
+        if(userService.getUser()) props.history.replace('/');
+    }, [])
 
     const onHandleChange = (ev) => {
         const value = ev.target.value;

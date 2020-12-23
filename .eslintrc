@@ -4,6 +4,7 @@
   ],
   // Here you can change rules, key = Rule Name, value = 'off'|'warn'|'error'
   "rules": {
-    "react-hooks/exhaustive-deps": "off"
+    "react-hooks/exhaustive-deps": "off",
+    "import/no-anonymous-default-export": "off"
   }
 }
